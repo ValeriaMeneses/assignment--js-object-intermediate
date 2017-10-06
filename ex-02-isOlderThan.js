@@ -9,12 +9,22 @@
 
 let someGirl = {
   name: 'Lisa',
-  age: 20
+  age: 20,
+
 }
 
 /*
  * On the `someGirl` object, write the '.isOlderThan()' method and its logic  below :
 */
+someGirl.isOlderThan = function (number) {
+    if (number < this.age) {
+      console.log(true);
+      return true
+    }else {
+      return false
+    }
+
+}
 
 
 

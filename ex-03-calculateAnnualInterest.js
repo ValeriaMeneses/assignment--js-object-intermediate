@@ -18,6 +18,23 @@ let someGuy = {
   age: 39,
   creditScore: 310
 }
+someGuy.calculateAnnualInterest = function (numero) {
+  var numero = numero/10
+  if (this.creditScore+100 < 200) {
+    console.log(20);
+    return 20
+
+  }else if (this.creditScore+100 > 501  &&  this.creditScore < 500) {
+    console.log(10);
+    return 10
+
+  }else if (this.creditScore+100 > 501) {
+    console.log(5);
+    return 5
+
+  }
+return numero
+}
 
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

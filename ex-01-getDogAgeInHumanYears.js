@@ -14,22 +14,26 @@
  *
 */
 
-
 let dog = {
   name: 'Abby',
   age: 7,
   legs: 4
-}
+    }
+
+
 
 /*
  * Write the logic '.getDogAgeInHumanYears()' method for `dog` below :
 */
 
 dog.getDogAgeInHumanYears = function(){
+  if (this.age > 0) {
+    this.age = this.age*7
+    // console.log(this.age);
+    return this.age
   // Your code here
 }
-
-
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
