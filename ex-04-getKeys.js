@@ -9,7 +9,11 @@
  *   => ['pid', 'title', 'price']
  *
 */
-
+getKeys = function(object){
+	var arrObject = Object.keys(object)
+	console.log(arrObject);
+	return arrObject
+}
 
 
 
