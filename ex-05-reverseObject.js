@@ -12,6 +12,20 @@
  *
 **/
 
+function reverseObject(object) {
+	var newObjetc = {}
+	for (var property in object) {
+		var valor= object[property]
+		// console.log(valor);
+		// console.log(property);
+		newObjetc[valor] = property
+
+
+	}
+	// console.log(newObjetc);
+	return newObjetc
+}
+
 
 
 

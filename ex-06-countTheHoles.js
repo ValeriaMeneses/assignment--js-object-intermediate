@@ -11,10 +11,28 @@
  *
 **/
 
+var countTheHoles = function(num){
+  var count = 0;
+  num = num.toString().split('')
+  // console.log(num);
+  // console.log(num.length);
+  for (var i = 0; i < num.length; i++) {
 
-
-
-var countTheHoles = function(){}
+    if (num[i] === '8') {
+      count += 2
+    }else if (num[i] === '4') {
+      count ++
+    }else if (num[i] === '6') {
+      count ++
+    }else if (num[i] === '9') {
+      count ++
+    }else if (num[i] === '0') {
+      count ++
+    }
+  }
+  // console.log(count);
+  return count
+}
 
 
 //~+~+~+~+~+~+~+~Don't Touch~+~+~++~+~+~+~+~+~+~+
